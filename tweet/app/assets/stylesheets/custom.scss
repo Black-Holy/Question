@@ -68,7 +68,7 @@ h1 {
 
 .navbar-transparent {
   margin-bottom: 0px;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   height: 80px;
   a {
     color: #fff !important;
@@ -174,4 +174,10 @@ th {
 
 table {
   background-color: white;
+}
+
+
+
+.fc-toolbar {
+  padding-top: 30px;
 }

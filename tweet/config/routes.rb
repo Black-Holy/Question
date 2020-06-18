@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   resources :calendars
-  get 'calendar/index'
+  
+  delete '/admin/users', 'admin#destroy'
+  
+  root 'pages#index'
   
   get 'sessions/new'
-  root 'pages#index'
   
   get    '/login',  to: 'sessions#new'
   post   '/login',  to: 'sessions#create'

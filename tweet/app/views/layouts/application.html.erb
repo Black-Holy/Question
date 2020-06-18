@@ -17,25 +17,22 @@
     <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       <div class="container">
         <% if logged_in? %>
-          <%= link_to calendar_index_path do %>
+          <%= link_to calendars_path do %>
             <span><%= image_tag "icon/logo2.png", class: "navbar-brand" %></span>
           <% end %>
         <% end %>
         <ul class="nav navbar-nav navbar-right">
           <% if logged_in? %>
             <li>
-              <%= link_to calendar_index_path do %>
-                <%= image_tag "icon/topicview" %>
-              <% end %>
-            </li>
-            <li>
               <%= link_to new_user_path do %>
-                <%= image_tag "icon/topicview" %>
+                <%= image_tag "icon/newuser" %>
+                <p>新規登録</p>
               <% end %>
             </li>
             <li>
               <%= link_to admin_users_path do %>
-                <%= image_tag "icon/topicview" %>
+                <%= image_tag "icon/userview" %>
+                <p>登録ユーザー</p>
               <% end %>
             </li>
             <li>
